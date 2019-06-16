@@ -21,6 +21,8 @@ Projekat je osmisljen da bude oglasavanje vozila za prodaju, npr. kao sto je saj
 - API sloj, preko swaggera, za testiranje komandi.
 - WEB, crud za upravljanje oglasom i korisnikom.
 
+* Korisnik takodje moze i da se prijavi na odredjeni oglas, tkz. pracenje oglasa.
+
 ## Dizajn baze podataka
 
 ![baza](dijagram.png)
