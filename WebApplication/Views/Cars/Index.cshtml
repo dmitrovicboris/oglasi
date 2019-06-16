@@ -1,0 +1,90 @@
+﻿@using Application.Responses
+@using Application.DataTransfer
+@model PageResponse<AutomobilDto>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+@if (TempData["error"] != null)
+{
+    <p class="text-danger">@TempData["error"]</p>
+}
+
+
+<form method="get" asp-controller="News" asp-action="Index">
+    <p align="left">
+        <input type="text" name="Keyword" placeholder="Search by Heading" />
+        <input type="submit" value="Filter" />
+    </p>
+    <p align="right">
+        <input type="submit" value="Create New" asp-action="Create" />
+    </p>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Naziv oglasa
+            </th>
+            <th>
+                Opis
+            </th>
+            <th>
+                Category
+            </th>
+            <th>
+                Slike
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Data)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Naziv)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Opis)
+                </td>
+                <td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Kategorija)
+                </td>
+                <td>
+                    @foreach (var detail in item.Slike)
+                    {
+                    <img class="img-thumbnail" width="100" height="150" src="~@detail.Path"
+                         asp-append-version="true" alt="@detail.Path" />
+                    }
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@{
+    var prevDisabled = Model.CurrentPage > 1 ? "" : "disabled";
+    var nextDisabled = Model.CurrentPage == Model.PagesCount ? "disabled" : "";
+}
+
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.CurrentPage - 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @prevDisabled">
+    Previous
+</a>
+<a asp-action="Index"
+   asp-route-sortOrder="@ViewData["CurrentSort"]"
+   asp-route-pageNumber="@(Model.CurrentPage + 1)"
+   asp-route-currentFilter="@ViewData["CurrentFilter"]"
+   class="btn btn-default @nextDisabled">
+    Next
+</a>

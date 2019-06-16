@@ -1,0 +1,18 @@
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\Domain\bin\Debug\netcoreapp2.2\Domain.deps.json
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\Domain\bin\Debug\netcoreapp2.2\Domain.dll
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\Domain\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\Domain\obj\Debug\netcoreapp2.2\Domain.csproj.CoreCompileInputs.cache
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfoInputs.cache
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfo.cs
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\Domain\obj\Debug\netcoreapp2.2\Domain.dll
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\Domain\obj\Debug\netcoreapp2.2\Domain.pdb
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\Domain\obj\Debug\netcoreapp2.2\Domain.csprojAssemblyReference.cache
+C:\Users\Boris\Documents\oglasi\Domain\bin\Debug\netcoreapp2.2\Domain.deps.json
+C:\Users\Boris\Documents\oglasi\Domain\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Boris\Documents\oglasi\Domain\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Boris\Documents\oglasi\Domain\obj\Debug\netcoreapp2.2\Domain.csprojAssemblyReference.cache
+C:\Users\Boris\Documents\oglasi\Domain\obj\Debug\netcoreapp2.2\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Boris\Documents\oglasi\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfoInputs.cache
+C:\Users\Boris\Documents\oglasi\Domain\obj\Debug\netcoreapp2.2\Domain.AssemblyInfo.cs
+C:\Users\Boris\Documents\oglasi\Domain\obj\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Boris\Documents\oglasi\Domain\obj\Debug\netcoreapp2.2\Domain.pdb

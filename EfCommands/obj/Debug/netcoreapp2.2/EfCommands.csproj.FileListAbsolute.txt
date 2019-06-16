@@ -1,0 +1,32 @@
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.deps.json
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.dll
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.pdb
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\bin\Debug\netcoreapp2.2\Application.dll
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\bin\Debug\netcoreapp2.2\Domain.dll
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\bin\Debug\netcoreapp2.2\EfDataAccess.dll
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\bin\Debug\netcoreapp2.2\Application.pdb
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\bin\Debug\netcoreapp2.2\EfDataAccess.pdb
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csprojAssemblyReference.cache
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csproj.CoreCompileInputs.cache
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.AssemblyInfoInputs.cache
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.AssemblyInfo.cs
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csproj.CopyComplete
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.dll
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.pdb
+C:\Users\Boris\Documents\oglasi\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.deps.json
+C:\Users\Boris\Documents\oglasi\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.dll
+C:\Users\Boris\Documents\oglasi\EfCommands\bin\Debug\netcoreapp2.2\EfCommands.pdb
+C:\Users\Boris\Documents\oglasi\EfCommands\bin\Debug\netcoreapp2.2\Application.dll
+C:\Users\Boris\Documents\oglasi\EfCommands\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\Boris\Documents\oglasi\EfCommands\bin\Debug\netcoreapp2.2\EfDataAccess.dll
+C:\Users\Boris\Documents\oglasi\EfCommands\bin\Debug\netcoreapp2.2\Application.pdb
+C:\Users\Boris\Documents\oglasi\EfCommands\bin\Debug\netcoreapp2.2\EfDataAccess.pdb
+C:\Users\Boris\Documents\oglasi\EfCommands\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\Boris\Documents\oglasi\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csprojAssemblyReference.cache
+C:\Users\Boris\Documents\oglasi\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csproj.CoreCompileInputs.cache
+C:\Users\Boris\Documents\oglasi\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.AssemblyInfoInputs.cache
+C:\Users\Boris\Documents\oglasi\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.AssemblyInfo.cs
+C:\Users\Boris\Documents\oglasi\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.csproj.CopyComplete
+C:\Users\Boris\Documents\oglasi\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.dll
+C:\Users\Boris\Documents\oglasi\EfCommands\obj\Debug\netcoreapp2.2\EfCommands.pdb
