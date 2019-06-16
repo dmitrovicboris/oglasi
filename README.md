@@ -8,13 +8,13 @@ Projekat je osmisljen da bude oglasavanje vozila za prodaju, npr. kao sto je saj
 
 * Za postavljanje novog oglasa, potrebni su sledeci koraci :
 
-[x] Izabrati Marku
-[x] Model
-[x] Kategoriju
-[x] Tip 
-[x] Postaviti naslov oglasa
-[x] Postaviti opis oglasa
-[] Postaviti sliku za oglas
+- [x] Izabrati Marku
+- [x] Model
+- [x] Kategoriju
+- [x] Tip 
+- [x] Postaviti naslov oglasa
+- [x] Postaviti opis oglasa
+- [] Postaviti sliku za oglas
 
 > Za svaki od prethodnih koraka, postoji i :
 
