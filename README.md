@@ -14,7 +14,7 @@ Projekat je osmisljen da bude oglasavanje vozila za prodaju, npr. kao sto je saj
 - [x] Tip 
 - [x] Postaviti naslov oglasa
 - [x] Postaviti opis oglasa
-- [] Postaviti sliku za oglas
+- [ ] Postaviti sliku za oglas
 
 > Za svaki od prethodnih koraka, postoji i :
 
