@@ -23,4 +23,4 @@ Projekat je osmisljen da bude oglasavanje vozila za prodaju, npr. kao sto je saj
 
 ## Dizajn baze podataka
 
-![baza][dijagram.png]
+![baza](dijagram.png)
