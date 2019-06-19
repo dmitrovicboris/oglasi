@@ -37,6 +37,7 @@ namespace API
             services.AddTransient<IGetBrandsCommand,EfGetBrandsCommand>();
             services.AddTransient<IGetBrandCommand, EfGetBrandCommand>();
             services.AddTransient<IAddNewBrandCommand, EfIAddNewBrandCommand>();
+            services.AddTransient<IEditBrandCommand, EfEditBrandCommand>();
             services.AddTransient<IDeleteBrandCommand, EfDeleteBrandCommand>();
 
             services.AddTransient<IGetTypesCommand, EfGetTypesCommand>();
@@ -48,7 +49,9 @@ namespace API
             services.AddTransient<IGetModelsCommand, EfGetModelsCommand>();
             services.AddTransient<IGetModelCommand, EfGetModelCommand>();
             services.AddTransient<IAddNewModelCommand, EfIAddNewModelCommand>();
+            services.AddTransient<IEditModelCommand, EfEditModelCommand>();
             services.AddTransient<IDeleteModelCommand, EfDeleteModelCommand>();
+            services.AddTransient<IGetModelsOfBrandCommand, EfGetModelsOfBrandCommand>();
 
             services.AddTransient<IGetFuelsCommand, EfGetFuelsCommand>();
             services.AddTransient<IGetFuelCommand, EfGetFuelCommand>();
@@ -64,6 +67,12 @@ namespace API
                     Title = "My Api",
                     Description = "This is swagger specification"
                 });
+
+                var xmlFile = "SwaggerXMLApi.XML";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+
+                //... and tell Swagger to use those XML comments.
+                c.IncludeXmlComments(xmlPath);
             });
         }
 
@@ -91,6 +100,8 @@ namespace API
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
             });
+
+            app.UseCors();
         }
     }
 }

@@ -51,9 +51,7 @@ namespace EfDataAccess.Migrations
 
                     b.Property<int?>("TipId");
 
-                    b.Property<bool>("Vlasnik")
-                        .ValueGeneratedOnAdd()
-                        .HasDefaultValue(false);
+                    b.Property<bool>("Vlasnik");
 
                     b.HasKey("Id");
 

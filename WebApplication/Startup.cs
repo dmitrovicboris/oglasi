@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Application.Commands;
+using Application.Interfaces;
 using EfCommands;
 using EfDataAccess;
 using Microsoft.AspNetCore.Builder;
@@ -12,6 +13,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WebApplication.Email;
 
 namespace WebApplication
 {
@@ -38,25 +40,29 @@ namespace WebApplication
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddDbContext<MyDbContext>();
 
+            services.AddTransient<IGetCarsCommand, EfGetCarsCommand>();
+            services.AddTransient<IGetCarCommand, EfGetCarCommand>();
+            services.AddTransient<IDeleteCarCommand, EfDeleteCarCommand>();
+
+            services.AddTransient<IGetUsersCommand, EfGetUsersCommand>();
+            services.AddTransient<IGetUserCommand, EfGetUserCommand>();
+            services.AddTransient<IAddNewUserCommand, EfAddNewUserCommand>();
+            services.AddTransient<IEditUserCommand, EfEditUserCommand>();
+            services.AddTransient<IDeleteUserCommand, EfDeleteUserCommand>();
+
             services.AddTransient<IGetBrandsCommand, EfGetBrandsCommand>();
-            services.AddTransient<IGetBrandCommand, EfGetBrandCommand>();
-            services.AddTransient<IAddNewBrandCommand, EfIAddNewBrandCommand>();
-            services.AddTransient<IDeleteBrandCommand, EfDeleteBrandCommand>();
-
             services.AddTransient<IGetTypesCommand, EfGetTypesCommand>();
-            services.AddTransient<IGetTypeCommand, EfGetTypeCommand>();
-            services.AddTransient<IAddNewTypeCommand, EfIAddNewTypeCommand>();
-            services.AddTransient<IDeleteTypeCommand, EfDeleteTypeCommand>();
-
             services.AddTransient<IGetModelsCommand, EfGetModelsCommand>();
-            services.AddTransient<IGetModelCommand, EfGetModelCommand>();
-            services.AddTransient<IAddNewModelCommand, EfIAddNewModelCommand>();
-            services.AddTransient<IDeleteModelCommand, EfDeleteModelCommand>();
-
+            services.AddTransient<IGetCategoriesCommand, EfGetCategoriesCommand>();
             services.AddTransient<IGetFuelsCommand, EfGetFuelsCommand>();
-            services.AddTransient<IGetFuelCommand, EfGetFuelCommand>();
-            services.AddTransient<IAddNewFuelTypeCommand, EfIAddNewFuelTypeCommand>();
-            services.AddTransient<IDeleteFuelCommand, EfDeleteFuelCommand>();
+            services.AddTransient<IGetModelsOfBrandCommand, EfGetModelsOfBrandCommand>();
+
+            var section = Configuration.GetSection("Email");
+
+            var sender =
+                new SmtpEmailSender(section["host"], Int32.Parse(section["port"]), section["fromaddress"], section["password"]);
+
+            services.AddSingleton<IEmailSender>(sender);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -81,8 +87,9 @@ namespace WebApplication
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Cars}/{action=Index}/{id?}");
             });
+            app.UseCors();
         }
     }
 }

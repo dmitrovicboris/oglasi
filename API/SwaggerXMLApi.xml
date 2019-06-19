@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API</name>
+    </assembly>
+    <members>
+        <member name="M:API.Controllers.GorivoController.Get(Application.SearchObjects.FuelSearch)">
+            <summary>
+            Returns a group of Fuels matching the given keyword.
+            </summary>
+            <param name="search">The fuel name to search for</param>
+        </member>
+        <member name="M:API.Controllers.GorivoController.Get(System.Int32)">
+            <summary>
+            Retrieve the fuel by their ID.
+            </summary>
+            <param name="id">The ID of the desired Fuel</param>
+            <returns>A GorivoDto</returns>
+        </member>
+        <member name="M:API.Controllers.GorivoController.Post(Application.DataTransfer.CreateDtos.NapraviVrstuGoriva)">
+            <summary>
+            Kreiranje novog goriva 
+            </summary>
+            <param name="gorivo">DTO potreban za kreiranje novog goriva</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.GorivoController.Put(System.Int32,Application.DataTransfer.CreateDtos.NapraviVrstuGoriva)">
+            <summary>
+            Izmena postojeceg goriva
+            </summary>
+            <param name="gorivo">DTO potreban za izmenu postojeceg goriva</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.GorivoController.Delete(System.Int32)">
+            <summary>
+            Brisanje postojeceg goriva
+            </summary>
+            <param name="id">id koji odgovara vrsti goriva</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.KategorijaController.Get(Application.SearchObjects.CategorySearch)">
+            <summary>
+            Returns a group of Categories matching the given keyword.
+            </summary>
+            <param name="search">The category name to search for</param>
+        </member>
+        <member name="M:API.Controllers.KategorijaController.Get(System.Int32)">
+            <summary>
+            Retrieve the category by their ID.
+            </summary>
+            <param name="id">The ID of the desired Category</param>
+            <returns>A KategorijaDTO</returns>
+        </member>
+        <member name="M:API.Controllers.KategorijaController.Post(Application.DataTransfer.CreateDtos.NapraviNovuKategoriju)">
+            <summary>
+            Kreiranje nove kategorije 
+            </summary>
+            <param name="kategorija">DTO potreban za kreiranje nove kategorije</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.KategorijaController.Put(System.Int32,Application.DataTransfer.CreateDtos.NapraviNovuKategoriju)">
+            <summary>
+            Izmena postojece kategorije
+            </summary>
+            <param name="kategorija">DTO potreban za izmenu postojeceg modela</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.KategorijaController.Delete(System.Int32)">
+            <summary>
+            Brisanje postojece kategorije
+            </summary>
+            <param name="id">id koji odgovara kategoriji</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.MarkaController.Get(Application.SearchObjects.BrandSearch)">
+            <summary>
+            Returns a group of Brands matching the given keyword.
+            </summary>
+            <param name="search">The brand name to search for</param>
+        </member>
+        <member name="M:API.Controllers.MarkaController.Get(System.Int32)">
+            <summary>
+            Retrieve the brand by their ID.
+            </summary>
+            <param name="id">The ID of the desired Brand</param>
+            <returns>A MarkaDto</returns>
+        </member>
+        <member name="M:API.Controllers.MarkaController.Post(Application.DataTransfer.CreateDtos.NapraviIzmeniMarku)">
+            <summary>
+            Kreiranje nove marke 
+            </summary>
+            <param name="model">DTO potreban za kreiranje nove marke</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.MarkaController.Put(System.Int32,Application.DataTransfer.CreateDtos.NapraviIzmeniMarku)">
+            <summary>
+            Izmena postojece marke
+            </summary>
+            <param name="marka">DTO potreban za izmenu postojeceg marke</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.MarkaController.Delete(System.Int32)">
+            <summary>
+            Brisanje postojece marke
+            </summary>
+            <param name="id">id koji odgovara marci</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.ModelController.Get(Application.SearchObjects.ModelSearch)">
+            <summary>
+            Returns a group of Models matching the given keyword.
+            </summary>
+            <param name="search">The name to search for</param>
+        </member>
+        <member name="M:API.Controllers.ModelController.Get(System.Int32)">
+            <summary>
+            Retrieve the model by their ID.
+            </summary>
+            <param name="id">The ID of the desired Model</param>
+            <returns>A ModelDto</returns>
+        </member>
+        <member name="M:API.Controllers.ModelController.Post(Application.DataTransfer.CreateDtos.NapraviNovModel)">
+            <summary>
+            Kreiranje novog modela 
+            </summary>
+            <param name="model">DTO potreban za kreiranje novog modela</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.ModelController.Put(System.Int32,Application.DataTransfer.CreateDtos.NapraviNovModel)">
+            <summary>
+            Izmena postojeceg modela
+            </summary>
+            <param name="model">DTO potreban za izmenu postojeceg modela</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.ModelController.Delete(System.Int32)">
+            <summary>
+            Brisanje postojeceg modela
+            </summary>
+            <param name="id">id koji odgovara modelu</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.TipController.Get(Application.SearchObjects.TypeSearch)">
+            <summary>
+            Returns a group of Types matching the given keyword.
+            </summary>
+            <param name="search">The type name to search for</param>
+        </member>
+        <member name="M:API.Controllers.TipController.Get(System.Int32)">
+            <summary>
+            Retrieve the type by their ID.
+            </summary>
+            <param name="id">The ID of the desired Type</param>
+            <returns>A TypeDto</returns>
+        </member>
+        <member name="M:API.Controllers.TipController.Post(Application.DataTransfer.CreateDtos.NapraviNoviTip)">
+            <summary>
+            Kreiranje novog tipa 
+            </summary>
+            <param name="tip">DTO potreban za kreiranje novog tipa</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.TipController.Put(System.Int32,Application.DataTransfer.CreateDtos.NapraviNoviTip)">
+            <summary>
+            Izmena postojeceg tipa
+            </summary>
+            <param name="tip">DTO potreban za izmenu postojeceg tipa</param>
+            <returns>Status</returns>
+        </member>
+        <member name="M:API.Controllers.TipController.Delete(System.Int32)">
+            <summary>
+            Brisanje postojeceg tipa
+            </summary>
+            <param name="id">id koji odgovara tipu</param>
+            <returns>Status</returns>
+        </member>
+    </members>
+</doc>

@@ -21,11 +21,13 @@ C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\API\bin\Debug
 C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\API\bin\Debug\netcoreapp2.2\Application.pdb
 C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\API\bin\Debug\netcoreapp2.2\EfCommands.dll
 C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\API\bin\Debug\netcoreapp2.2\EfCommands.pdb
+C:\STEFAN\FAX\Treca godina\TRECI TRIMESTAR\ASP\vezbanje\automobili\API\bin\Debug\netcoreapp2.2\SwaggerXMLApi.xml
 C:\Users\Boris\Documents\oglasi\API\bin\Debug\netcoreapp2.2\API.deps.json
 C:\Users\Boris\Documents\oglasi\API\bin\Debug\netcoreapp2.2\API.runtimeconfig.json
 C:\Users\Boris\Documents\oglasi\API\bin\Debug\netcoreapp2.2\API.runtimeconfig.dev.json
 C:\Users\Boris\Documents\oglasi\API\bin\Debug\netcoreapp2.2\API.dll
 C:\Users\Boris\Documents\oglasi\API\bin\Debug\netcoreapp2.2\API.pdb
+C:\Users\Boris\Documents\oglasi\API\bin\Debug\netcoreapp2.2\SwaggerXMLApi.xml
 C:\Users\Boris\Documents\oglasi\API\bin\Debug\netcoreapp2.2\Application.dll
 C:\Users\Boris\Documents\oglasi\API\bin\Debug\netcoreapp2.2\Domain.dll
 C:\Users\Boris\Documents\oglasi\API\bin\Debug\netcoreapp2.2\EfCommands.dll

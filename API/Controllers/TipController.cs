@@ -31,6 +31,10 @@ namespace API.Controllers
             _editTypeCommand = editTypeCommand;
         }
 
+        /// <summary>
+        /// Returns a group of Types matching the given keyword.
+        /// </summary>
+        /// <param name="search">The type name to search for</param>
         // GET: api/Tip
         [HttpGet]
         public IActionResult Get([FromQuery] TypeSearch search)
@@ -50,6 +54,11 @@ namespace API.Controllers
             }
         }
 
+        /// <summary>
+        /// Retrieve the type by their ID.
+        /// </summary>
+        /// <param name="id">The ID of the desired Type</param>
+        /// <returns>A TypeDto</returns>
         // GET: api/Tip/5
         [HttpGet("{id}", Name = "GetTip")]
         public ActionResult<TypeDto> Get(int id)
@@ -69,6 +78,11 @@ namespace API.Controllers
             }
         }
 
+        /// <summary>
+        /// Kreiranje novog tipa 
+        /// </summary>
+        /// <param name="tip">DTO potreban za kreiranje novog tipa</param>
+        /// <returns>Status</returns>
         // POST: api/Tip
         [HttpPost]
         public IActionResult Post([FromBody] NapraviNoviTip tip)
@@ -84,6 +98,11 @@ namespace API.Controllers
             }
         }
 
+        /// <summary>
+        /// Izmena postojeceg tipa
+        /// </summary>
+        /// <param name="tip">DTO potreban za izmenu postojeceg tipa</param>
+        /// <returns>Status</returns>
         // PUT: api/Tip/5
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] NapraviNoviTip tip)
@@ -100,6 +119,11 @@ namespace API.Controllers
             }
         }
 
+        /// <summary>
+        /// Brisanje postojeceg tipa
+        /// </summary>
+        /// <param name="id">id koji odgovara tipu</param>
+        /// <returns>Status</returns>
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)

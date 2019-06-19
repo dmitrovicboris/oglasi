@@ -31,6 +31,10 @@ namespace API.Controllers
             _editFuelCommand = editFuelCommand;
         }
 
+        /// <summary>
+        /// Returns a group of Fuels matching the given keyword.
+        /// </summary>
+        /// <param name="search">The fuel name to search for</param>
         // GET: api/Gorivo
         [HttpGet]
         public IActionResult Get([FromQuery] FuelSearch search)
@@ -50,6 +54,11 @@ namespace API.Controllers
             }
         }
 
+        /// <summary>
+        /// Retrieve the fuel by their ID.
+        /// </summary>
+        /// <param name="id">The ID of the desired Fuel</param>
+        /// <returns>A GorivoDto</returns>
         // GET: api/Gorivo/5
         [HttpGet("{id}", Name = "GetGorivo")]
         public ActionResult<GorivoDto> Get(int id)
@@ -69,6 +78,11 @@ namespace API.Controllers
             }
         }
 
+        /// <summary>
+        /// Kreiranje novog goriva 
+        /// </summary>
+        /// <param name="gorivo">DTO potreban za kreiranje novog goriva</param>
+        /// <returns>Status</returns>
         // POST: api/Gorivo
         [HttpPost]
         public IActionResult Post([FromBody] NapraviVrstuGoriva gorivo)
@@ -84,6 +98,11 @@ namespace API.Controllers
             }
         }
 
+        /// <summary>
+        /// Izmena postojeceg goriva
+        /// </summary>
+        /// <param name="gorivo">DTO potreban za izmenu postojeceg goriva</param>
+        /// <returns>Status</returns>
         // PUT: api/Gorivo/5
         [HttpPut("{id}")]
         public IActionResult Put(int id, [FromBody] NapraviVrstuGoriva gorivo)
@@ -100,6 +119,11 @@ namespace API.Controllers
             }
         }
 
+        /// <summary>
+        /// Brisanje postojeceg goriva
+        /// </summary>
+        /// <param name="id">id koji odgovara vrsti goriva</param>
+        /// <returns>Status</returns>
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)

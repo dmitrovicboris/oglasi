@@ -18,7 +18,7 @@ namespace EfCommands
         public void Execute(NapraviNoviTip request)
         {
             var type = Context.Tipovi.Find(request.TipId);
-            if (Context.Tipovi.Any(t => t.Type == request.Tip))
+            if (Context.Tipovi.Where(x => x.Id != request.TipId).Any(t => t.Type == request.Tip))
             {
                 throw new EntityAlreadyExists("Tip");
             }

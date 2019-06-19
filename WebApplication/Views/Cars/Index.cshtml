@@ -14,7 +14,7 @@
 
 <form method="get" asp-controller="News" asp-action="Index">
     <p align="left">
-        <input type="text" name="Keyword" placeholder="Search by Heading" />
+        <input type="text" name="Keyword" placeholder="Pretrazi po naslovu" />
         <input type="submit" value="Filter" />
     </p>
     <p align="right">
@@ -31,7 +31,22 @@
                 Opis
             </th>
             <th>
-                Category
+                Cena
+            </th>
+            <th>
+                Marka
+            </th>
+            <th>
+                Model
+            </th>
+            <th>
+                Kategorija
+            </th>
+            <th>
+                Tip
+            </th>
+            <th>
+                Vlasnik
             </th>
             <th>
                 Slike
@@ -42,30 +57,54 @@
     <tbody>
         @foreach (var item in Model.Data)
         {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Naziv)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Opis)
-                </td>
-                <td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Kategorija)
-                </td>
-                <td>
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Naziv)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Opis)
+            </td>
+            <td>
+                <p>$@Html.DisplayFor(modelItem => item.Price)</p>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MarkaAutomobila)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Kategorija)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tip)
+            </td>
+            <td>
+                @if (@item.Vlasnik)
+                {
+                    <p style="font-style:oblique">Jeste</p>
+                }
+                else
+                {
+                    <p style="font-style:oblique">Nije</p>
+                }
+            </td>
+            <td>
+                @if (item.Slike != null)
+                {
                     @foreach (var detail in item.Slike)
                     {
-                    <img class="img-thumbnail" width="100" height="150" src="~@detail.Path"
-                         asp-append-version="true" alt="@detail.Path" />
+                        <img class="img-thumbnail" width="100" height="150" src="~@detail.Path"
+                             asp-append-version="true" alt="@detail.Path" />
                     }
-                </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
-                </td>
-            </tr>
+                }
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
         }
     </tbody>
 </table>

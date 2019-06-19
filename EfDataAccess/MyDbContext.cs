@@ -18,7 +18,7 @@ namespace EfDataAccess
         public DbSet<Prijave> Prijave { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=desktop-8otflm7\sqlexpress;Initial Catalog=automobili;Integrated Security=True;Pooling=False");
+            optionsBuilder.UseSqlServer(@"Data Source=DESKTOP-8OTFLM7\SQLEXPRESS;Initial Catalog=projekatAutomobili;Integrated Security=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -18,7 +18,7 @@ namespace EfCommands
         public void Execute(NapraviVrstuGoriva request)
         {
             var fuels = Context.VrsteGoriva.Find(request.GorivoId);
-            if (Context.VrsteGoriva.Any(g => g.Naziv == request.VrstaGoriva))
+            if (Context.VrsteGoriva.Where(x => x.Id != request.GorivoId).Any(g => g.Naziv == request.VrstaGoriva))
             {
                 throw new EntityAlreadyExists("Gorivo");
             }
