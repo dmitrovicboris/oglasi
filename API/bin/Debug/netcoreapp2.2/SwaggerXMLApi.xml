@@ -15,7 +15,7 @@
             Retrieve the fuel by their ID.
             </summary>
             <param name="id">The ID of the desired Fuel</param>
-            <returns>A GorivoDto</returns>
+            <returns>A GorivoDTO</returns>
         </member>
         <member name="M:API.Controllers.GorivoController.Post(Application.DataTransfer.CreateDtos.NapraviVrstuGoriva)">
             <summary>

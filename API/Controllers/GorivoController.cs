@@ -58,7 +58,7 @@ namespace API.Controllers
         /// Retrieve the fuel by their ID.
         /// </summary>
         /// <param name="id">The ID of the desired Fuel</param>
-        /// <returns>A GorivoDto</returns>
+        /// <returns>A GorivoDTO</returns>
         // GET: api/Gorivo/5
         [HttpGet("{id}", Name = "GetGorivo")]
         public ActionResult<GorivoDto> Get(int id)
